@@ -43,7 +43,7 @@ def play(board)
   input = gets.strip
   index = input_to_index(input)
    while valid_move?(board, index)
-    move(board, index)
+    move(board, index, current_player)
     display_board(board)
       turn(board)
       turn(board)
